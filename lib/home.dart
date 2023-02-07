@@ -68,40 +68,16 @@ class Home extends StatelessWidget {
             // card weekly schedule
             Padding(
               padding: const EdgeInsets.all(20.0),
-              child: Card(
-                child: Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: const [
-                          Text(
-                            'Weekly Schedule',
-                            style: TextStyle(fontWeight: FontWeight.bold),
-                          ),
-                          Icon(
-                            Icons.attach_file,
-                            color: Colors.grey,
-                          )
-                        ],
-                      ),
-                      Column(
-                        children: const [
-                          Text('Weekly meeting with the boys'),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          Text('Weekly meeting with the boys'),
-                          Text('Yesterday 9:20 PMssssssssssssss'),
-                        ],
-                      )
-                    ],
-                  ),
+              child: Container(
+                decoration: const BoxDecoration(color: Colors.white),
+                padding: const EdgeInsets.all(20),
+                child: Row(
+                  children: const [
+                    Text('Weekly'),
+                  ],
                 ),
               ),
-            ),
+            )
 
             // grid
           ],
